@@ -1,0 +1,59 @@
+/* Zerando os estilos */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+} 
+/* estilos globais */
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-height: 80px;
+    
+    
+}
+
+/* Navegação */
+nav a {
+    color: white;
+    margin: 0 10px;
+    
+
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b35fe ;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* redes sociais */
+.redes-sociais img {
+    width: 24px;
+    margin: 0 5px;
+
+}
+.logo-ford img {
+    width: 24px;
+    margin: 0 5px;
+    
+}
