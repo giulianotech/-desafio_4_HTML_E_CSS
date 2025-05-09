@@ -1,8 +1,106 @@
-/* Zerando os estilos */
-*{
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-} 
+}
 
-body {}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    height: 80px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header a img {
+    width: 80px;
+    position: absolute;
+    left: 20px;
+}
+
+/* Menu de navegação */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+   
+    color: #00008b;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+/* Conteúdo principal */
+main {
+    text-align: center;
+    padding: 40px 20px;
+    
+}
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+main p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #001f5b;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.redes-sociais {
+    margin-bottom: 10px;
+}
+
+.redes-sociais span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.redes-sociais .icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+
+.footer-logo-ford {
+    width: 60px;
+    margin-top: 10px;
+}
