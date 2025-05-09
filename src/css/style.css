@@ -42,8 +42,11 @@ main {
 footer {
     background-color: #1b35fe ;
     color: white;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    flex-wrap: wrap;
 }
 
 /* redes sociais */
@@ -52,8 +55,13 @@ footer {
     margin: 0 5px;
 
 }
-.logo-ford img {
+/* Ícones de redes sociais */
+.icon {
     width: 24px;
-    margin: 0 5px;
-    
+    height: 24px;
 }
+/* Logo Ford no rodapé */
+.footer-logo-ford {
+    width: 60px;
+}
+
