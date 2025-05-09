@@ -78,29 +78,40 @@ main p {
 footer {
     background-color: #001f5b;
     color: white;
-    text-align: center;
-    padding: 20px 10px;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
 }
 
+/* Coluna da esquerda – Redes Sociais */
 .redes-sociais {
-    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .redes-sociais span {
-    display: block;
-    margin-bottom: 8px;
+    margin-right: 10px;
     font-weight: bold;
 }
 
+/* Ícones sociais */
 .redes-sociais .icon {
-    width: 32px;
-    height: 32px;
-    margin: 0 8px;
-    vertical-align: middle;
+    width: 24px;
+    height: 24px;
 }
 
+/* Texto central */
+footer p {
+    text-align: center;
+    flex: 1;
+    font-size: 14px;
+}
+
+/* Logo da Ford à direita */
 .footer-logo-ford {
     width: 60px;
-    margin-top: 10px;
+    height: auto;
 }
