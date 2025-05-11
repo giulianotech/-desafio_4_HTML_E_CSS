@@ -53,6 +53,7 @@ nav a:hover {
 main {
     text-align: center;
     padding: 40px 20px;
+
     
 }
 
@@ -72,6 +73,13 @@ main p {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+    
+}
+main a {
+    text-decoration:underline;
+}
+main a:hover {
+     color:red;   
 }
 
 /* Rodapé */
