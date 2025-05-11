@@ -123,3 +123,16 @@ footer p {
     width: 60px;
     height: auto;
 }
+
+/*Estilos da tabela*/
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+/*Estilos da tabela*/
