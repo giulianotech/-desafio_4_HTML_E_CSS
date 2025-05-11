@@ -5,14 +5,11 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #000;
-    
 }
-
 /* Cabeçalho */
 header {
     display: flex;
@@ -24,37 +21,29 @@ header {
     padding: 0 20px;
     border-bottom: 1px solid #ccc;
 }
-
 header a img {
     width: 80px;
     position: absolute;
     left: 20px;
 }
-
 /* Menu de navegação */
 nav {
     display: flex;
     gap: 30px;
 }
-
 nav a {
-   
     color: #00008b;
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s;
 }
-
 nav a:hover {
     color: #0056b3;
 }
-
 /* Conteúdo principal */
 main {
     text-align: center;
     padding: 40px 20px;
-
-    
 }
 
 main h1 {
@@ -67,12 +56,10 @@ main img {
     height: auto;
     border-radius: 8px;
 }
-
 main p {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
-    
 }
 main a {
     text-decoration:underline;
@@ -80,7 +67,6 @@ main a {
 main a:hover {
      color:red;   
 }
-
 /* Rodapé */
 footer {
     background-color: #001f5b;
@@ -91,38 +77,32 @@ footer {
     padding: 15px 40px;
     flex-wrap: wrap;
 }
-
 /* Coluna da esquerda – Redes Sociais */
 .redes-sociais {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
 .redes-sociais span {
     margin-right: 10px;
     font-weight: bold;
 }
-
 /* Ícones sociais */
 .redes-sociais .icon {
     width: 24px;
     height: 24px;
 }
-
 /* Texto central */
 footer p {
     text-align: center;
     flex: 1;
     font-size: 14px;
 }
-
 /* Logo da Ford à direita */
 .footer-logo-ford {
     width: 60px;
     height: auto;
 }
-
 /*Estilos da tabela*/
 table {
     width: 60%;
@@ -150,15 +130,27 @@ button:hover{
     transition: 0.3s;
 }
 /* Estilo do formulário */
+form {
+    display: flex;
+    justify-content:right;
+}
+.form-container{
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+.form-container img {
+    max-width: 300px;
+    height: auto;
+}
 form input,
 form select,
 form textarea {
-    
     padding: 10px;
     font-size: 14px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
-   
 /* Quando o campo estiver em foco */
 form input:focus,
 form textarea:focus,
@@ -167,48 +159,44 @@ form select {
 }
 /* Estilo do botão */
 form button {
-background: #003366;
-color: white;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-border-radius: 5px;
+    background: #003366;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
 }
 /* Efeito hover no botão */
 form button:hover {
-background: #0055a5;
+    background: #0055a5;
+}
 
-}
-.form-container{
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre imagem e formulário */
-}
-.form-container img {
-    max-width: 300px;
-    height: auto;
-}
 .form-wrapper {
     display: flex;
-    align-items: center; /* Alinha verticalmente */
-    gap: 30px;
-   
+    justify-content: space-between;
+    align-items:center; 
 }
-
 .image-container {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content:left;
 }
 .image-container img {
    max-width: 100%;
-   max-height: 400px; /* ou o tamanho que quiser */
-   
+   max-height: 300px; 
+   object-fit: contain;
 }
 form {
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-width: 280px;
+  max-width: 350px;
+}
+form h2{
+   font-size: 18px;
+   margin-bottom: 10px;
 }
 
