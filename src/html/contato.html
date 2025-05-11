@@ -19,31 +19,38 @@
         </nav>
     </header>    
         <main>
-            <h2>Fale conosco</h2>
-            <form>
-                <label>Nome:</label>
-                <input type="text" placeholder="Digite seu nome completo" required />
-
-                <label>Email:</label>
-                <input type="email" placeholder="exemplo@email.com" required />
-
-                <label>Telefone:</label>
-                <input type="tel" placeholder="(00) 0000-0000" required />
-
-                <label>Assunto</label>
-                <select required>
-                    <option value="" disabled selected>Selecione uma opção</option>
-                    <option>Elogio</option>
-                    <option>Dúvida</option>
-                    <option>Reclamação</option>
-
-                </select>
-                <label>Mensagem</label>
-                <textarea placeholder="Digite sua mensagem aqui..." required></textarea>
+            
+            <div class="form-wrapper"></div>
+                <div class="image-container">
+                    <img src="../img/xls 2.2 diesel.jpg" alt="">
+                </div>
                 
-                <button type="submit">Enviar</button>
-            </form>
+                <form>
+                    <h2>Sobre você</h2>
+                    <label></label>
+                    <input type="text" placeholder="NOME*" required />
 
+                    <label></label>
+                    <input type="text" placeholder="SOBRENOME*">
+
+                    <label></label>
+                    <input type="email" placeholder="EMAIL" required />
+
+                    <label></label>
+                    <input type="tex" placeholder="CPF*" required />
+                    <label></label>
+                    <input type="tel" placeholder="TELEFONE*"/>
+
+                    <select required>
+                         <option value="" disabled selected>COMO DESEJA SER CONTATADO</option>
+                         <option>Telefone</option>
+                         <option>Email</option>
+                         <option>WhatsApp</option>
+                    </select>
+                    <button type="submit">Enviar</button>
+            
+                </form>
+            </div>
         </main>
         <footer>
             <div class="redes-sociais">
