@@ -192,10 +192,16 @@ form button {
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
+    transition: 0.3s;
+    width: 50%;
+    margin-left: 50%;
+    
 }
 /* Efeito hover no botão */
 form button:hover {
     background: #0055a5;
+    background: #0055a5;
+    transform: scale(1.05);
 }
 
 
