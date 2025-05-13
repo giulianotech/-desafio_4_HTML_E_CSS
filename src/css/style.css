@@ -44,6 +44,8 @@ nav a:hover {
 main {
     text-align: center;
     padding: 40px 20px;
+    padding-bottom: 100px;
+    
 }
 
 main h1 {
@@ -69,6 +71,10 @@ main a:hover {
 }
 /* Rodapé */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #001f5b;
     color: white;
     display: flex;
