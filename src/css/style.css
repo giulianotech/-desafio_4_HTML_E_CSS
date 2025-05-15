@@ -1,15 +1,25 @@
-/* Reset básico */
+/* -------------------- */
+/* RESET E BASE GLOBAL */
+/* -------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #fff;
     color: #000;
 }
+
+
+/* -------------------- */
+/* ESTRUTURA DO SITE   */
+/* -------------------- */
+
 /* Cabeçalho */
 header {
     display: flex;
@@ -19,35 +29,65 @@ header {
     background-color: white;
     height: 80px;
     padding: 0 20px;
-    
 }
+
 header a img {
     width: 80px;
     position: absolute;
     left: 20px;
 }
+
 /* Menu de navegação */
 nav {
     display: flex;
     gap: 30px;
 }
+
 nav a {
     color: #00008b;
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s;
 }
+
 nav a:hover {
     color: #0056b3;
 }
-/* Conteúdo principal */
+
+
+/* Conteúdo Principal */
 main {
     text-align: center;
-    padding: 40px 20px;
-    padding-bottom: 100px;
-    
+    padding: 40px 20px 100px 20px;
 }
-/* Página centralizada */
+
+main h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+main p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+main a {
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: red;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Página centralizada (formulário com imagem) */
 main.centralizar {
     height: calc(100vh - 160px);
     display: flex;
@@ -56,27 +96,7 @@ main.centralizar {
     padding: 20px;
 }
 
-main h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #000;
-}
-main img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-main p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #333;
-}
-main a {
-    text-decoration:underline;
-}
-main a:hover {
-     color:red;   
-}
+
 /* Rodapé */
 footer {
     position: fixed;
@@ -91,98 +111,70 @@ footer {
     padding: 15px 40px;
     flex-wrap: wrap;
 }
-/* Coluna da esquerda – Redes Sociais */
-.redes-sociais {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.redes-sociais span {
-    margin-right: 10px;
-    font-weight: bold;
-}
-/* Ícones sociais */
-.redes-sociais .icon {
-    width: 24px;
-    height: 24px;
-}
-/* Texto central */
+
 footer p {
     text-align: center;
     flex: 1;
     font-size: 14px;
 }
-/* Logo da Ford à direita */
+
 .footer-logo-ford {
     width: 60px;
     height: auto;
 }
-/*Estilos da tabela*/
-table {
-    width: 60%;
-    border-collapse: collapse;
-    margin: 20px auto;
-}
-th, td {
-/*  border: 1px solid #ccc;*/
-    padding: 12px;
-    text-align: center;
-}
-/*Estilo do botão*/
-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #003366;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover{
-    background-color: #0055a5;
-    transform: scale(1.05);
-    transition: 0.3s;
-}
-/* Estilo do formulário */
-form {
-   display: flex;
-   justify-content:right;
-   flex: 1;
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   min-width: 280px;
-   max-width: 350px;
-}
-form h2{
-   font-size: 18px;
-   margin-bottom: 10px;
-}
-.form-wrapper {
+
+/* Redes sociais no rodapé */
+.redes-sociais {
     display: flex;
-    justify-content: space-between;
-    align-items:center; 
-}
-.image-container {
-    flex: 1;
-    display: flex;
-    justify-content:left;
-}
-.image-container img {
-   max-width: 100%;
-   max-height: 300px; 
-   object-fit: contain;
+    align-items: center;
+    gap: 10px;
 }
 
-.form-container{
-    display: flex;
-    align-items: center; 
-    gap: 20px; 
+.redes-sociais span {
+    margin-right: 10px;
+    font-weight: bold;
 }
+
+.redes-sociais .icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* -------------------- */
+/* COMPONENTES         */
+/* -------------------- */
+
+/* Formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+}
+
 .form-container img {
     max-width: 300px;
     height: auto;
 }
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 280px;
+    max-width: 350px;
+}
+
+form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 form input,
 form select,
 form textarea {
@@ -191,33 +183,153 @@ form textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-/* Quando o campo estiver em foco */
+
 form input:focus,
-form textarea:focus,
-form select {
+form select:focus,
+form textarea:focus {
     outline: 2px solid #003366;
 }
-/* Estilo do botão */
+
 form button {
-    background: #003366;
+    width: 50%;
+    align-self: flex-end;
+}
+
+/* Botões gerais */
+button,
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #003366;
     color: white;
-    padding: 10px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s;
-    width: 50%;
-    margin-left: 50%;
-    
 }
-/* Efeito hover no botão */
+
+button:hover,
 form button:hover {
-    background: #0055a5;
-    background: #0055a5;
+    background-color: #0055a5;
     transform: scale(1.05);
 }
 
+/* Imagem ao lado do formulário */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/* Tabela */
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
 
 
+/* -------------------- */
+/* RESPONSIVIDADE       */
+/* -------------------- */
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    header a img {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .form-container,
+    .form-wrapper,
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    form {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    form button {
+        width: 100%;
+        align-self: stretch;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .redes-sociais {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo-ford {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 14px;
+    }
+
+    main h1 {
+        font-size: 22px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
