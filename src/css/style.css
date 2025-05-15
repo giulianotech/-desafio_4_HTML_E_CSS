@@ -47,6 +47,14 @@ main {
     padding-bottom: 100px;
     
 }
+/* Página centralizada */
+main.centralizar {
+    height: calc(100vh - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
 main h1 {
     font-size: 28px;
